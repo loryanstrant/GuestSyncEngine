@@ -94,10 +94,10 @@ Your permission screen should now look like the image below.
 
 You will need to provide the secret value recorded earlier, as well as the application (client) ID and directory (tenant) ID from the *Overview* screen, as in the image below.
 
-<img src="https://user-images.githubusercontent.com/51473494/214441317-c1b44cce-b3ca-48d3-94a1-5f4b55d16861.png">
+<img src="https://user-images.githubusercontent.com/51473494/214441996-04caf6ee-a836-4c43-93d7-8e6899ddb1c9.png">
 
 
-## host Tenant Requirements
+## Host Tenant Requirements
 
 There are several components required within the host tenant for this solution to work:
 
