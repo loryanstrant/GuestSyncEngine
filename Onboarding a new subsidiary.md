@@ -1,7 +1,5 @@
 # Onboarding a new subsidiary
 
-# Onboarding a new subsidiary
-
 ## Subsidiary tenant requirements
 
 To simplify the implementation effort and level of complexity, only two things are required in the subsidiary tenant:
