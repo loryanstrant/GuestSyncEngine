@@ -40,6 +40,7 @@ The guest sync engine utilises a combination of the following Microsoft componen
 
 ## Solution file
 You can download the Power Platform solution file from [this link](https://github.com/loryanstrant/GuestSyncEngine/blob/main/GuestSynchronisationEngine_1_0_0_1.zip).
+
 Included are two setup workflows that will build the SharePoint lists required, as well as the home page with web part for the graphs.
 
 ![image](https://user-images.githubusercontent.com/51473494/214442392-b4dd5d04-47f8-4b6d-80e2-a1ad92fd86f3.png)
