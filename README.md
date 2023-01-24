@@ -28,7 +28,8 @@ The M365 Tenant Guest Sync Solution automates the process of:
 ## Components
 
 The guest sync engine utilises a combination of the following Microsoft components:
-<img width="226" alt="image" src="https://user-images.githubusercontent.com/51473494/214437736-36725cd6-0751-46a5-8a6d-19338031e3e5.png">
+
+<img src="https://user-images.githubusercontent.com/51473494/214437736-36725cd6-0751-46a5-8a6d-19338031e3e5.png">
 
 
 ## Key sections
