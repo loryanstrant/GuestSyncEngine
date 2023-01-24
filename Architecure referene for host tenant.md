@@ -3,20 +3,18 @@
 The following information relates only to the host tenant, as that is where the entire solution resides.
 
 ## App registration
+![image](https://user-images.githubusercontent.com/51473494/214435819-5bf44d9d-8585-48d1-a2cc-1f6c9061fe16.png)
+![image](https://user-images.githubusercontent.com/51473494/214435836-d3afe4cc-ba8d-450d-992e-501a8bbb35a4.png)
+<img width="325" alt="image" src="https://user-images.githubusercontent.com/51473494/214435960-d5b5c953-1815-48ca-8ac1-4ba081b87e34.png">
+![image](https://user-images.githubusercontent.com/51473494/214435981-4c13a43b-0f2d-4c9f-947d-e28cf9be1bca.png)
 
-![Graphical user interface, text, application Description automatically generated](media/f3101546fda1b82c0effbcc674a2b9b9.png)
-
-![Graphical user interface, text, application, email Description automatically generated](media/2714485a02c9e05d7a462c264f1723c1.png)
-
-![Graphical user interface, text, application, email Description automatically generated](media/4f0a65e145c9f15ae15d4c54b22adaa0.png)
-
-![Graphical user interface, text, application Description automatically generated](media/70f507f47d81d9c4ca481efaee082960.png)
 
 ## SharePoint permissions
 
 In order for guests to access a specific site in SharePoint, the permissions must be configured similar to the below image.
 
-![Graphical user interface, application Description automatically generated](media/7271501bfc7f75e357901c74bb567371.png)
+![image](https://user-images.githubusercontent.com/51473494/214436020-4f635255-f2be-481e-86c3-aa029fac6bca.png)
+
 
 ## Operational data storage
 
@@ -46,7 +44,8 @@ The columns required for the list are:
 
 An example of how this list should appear:
 
-![](media/e2bcc60d47719b775ea436e91d4ad574.png)
+![image](https://user-images.githubusercontent.com/51473494/214436059-53815788-d30c-493f-8af8-79f1f4ce9b67.png)
+
 
 #### List 2: Guest Sync Status
 
@@ -97,17 +96,21 @@ The columns required for the list are:
 
 To provide some basic statistics around guest redemption states as well as source organisations, the *Quick Chart* web part can be used on a SharePoint page to display visuals such as these:
 
-![](media/724ac88ca71e304ca249da6dac569973.png)
+![image](https://user-images.githubusercontent.com/51473494/214436142-03f334ea-d756-43ff-8c41-a436c3e01d16.png)
+
 
 | The Guest Redemption Status pie chart draws its data from the Guest Sync Status Statistics list.                                      | The Guests per Organisation pie chart draws its data from the Guest Sync Organisation Statistics list.                                |
 |---------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| ![Graphical user interface, text, application, email Description automatically generated](media/3a5aa14fe451d4bb7113f6ee3ae9eca2.png) | ![Graphical user interface, text, application, email Description automatically generated](media/f03a208a08d9351b0f31c18d2f42fa7b.png) |
+| ![image](https://user-images.githubusercontent.com/51473494/214436183-cf3fea72-b84a-4188-aa47-227296ada961.png)
+ | ![image](https://user-images.githubusercontent.com/51473494/214436212-1926353d-5221-4004-bcb0-a511732c07d7.png)
+ |
 
 ## Workflows
 
 There are six workflows for the entire solution:
 
-![](media/36177eaeb1330f850d0d563b5df20702.png)
+![image](https://user-images.githubusercontent.com/51473494/214436236-fe53cfb8-7f31-4984-b79e-720bc543f06d.png)
+
 
 The details of each workflow are outlined below.
 
@@ -119,13 +122,15 @@ It exists primarily to allow flexibility and ease of management of the schedulin
 
 The workflow runs every day, at 1, 3, 5, 7, and 9am. It does this so as to allow each workflow up to 2 hours to complete processing, before triggering the next one. This amount of time should only be required for initial creation of large amounts of guests, but otherwise leaves ample time in between.
 
-![Graphical user interface, application Description automatically generated](media/ccc0b3b9eada60cee1f4583a62014e9b.png)
+![image](https://user-images.githubusercontent.com/51473494/214436278-5d57b09a-446e-47d0-b7b0-372c74a1f746.png)
+
 
 The two actions around UTC and AEST are simply to ensure that the time controls are using AEST times, instead of UTC (which is the time zone the workflow runs in, even though its schedule is based on AEST).
 
 From there, the child workflows are triggered via HTTP calls and configured to run at the relevant hour intervals.
 
-![Graphical user interface, application Description automatically generated](media/cd8a532bd592c83dcd4bcf06fbf788dd.png)
+![image](https://user-images.githubusercontent.com/51473494/214436307-4a66bb8c-8001-464d-82ae-6a913c1fee2f.png)
+
 
 The method of HTTP calls and hour-based controls has been chosen to give a greater level of control if required, as well as the ability to run child workflows independently.
 
@@ -135,19 +140,20 @@ The copy users workflow is used for both initial subsidiary onboarding, as well 
 
 It is triggered by the control workflow via HTTP and performs several steps.
 
-![A picture containing timeline Description automatically generated](media/89c882dd665681cc01ffd223115ab68a.png)
+![image](https://user-images.githubusercontent.com/51473494/214436358-e06efeb7-ef40-41c3-b012-a34ac076fcaf.png)
+
 
 The two “Get items” workflow steps below, show where the workflow gets the Azure AD app registration details for the host tenant (first action), as well getting the same information as well as the security group ID for any tenant in the list that *is not* host.
 
-![](media/9b71254f1de721d312d306c51e72b60c.png)
+![image](https://user-images.githubusercontent.com/51473494/214436381-65fb1593-6492-4088-a56f-b0b1b34b4747.png)
 
 From here, the same set of actions are performed against each subsidiary listed in the Guest Sync Tenants list:
 
-![](media/9d4acedd143deb7475b7ffa5c9d36ff2.png)
+![image](https://user-images.githubusercontent.com/51473494/214436431-b0b1d036-f5ee-4b40-bf27-7d09ab302bb3.png)
 
-![Graphical user interface, application, Teams Description automatically generated](media/65a1be9818185daedba6a61274eed50e.png)
+![image](https://user-images.githubusercontent.com/51473494/214436457-b6d73637-d3f5-429b-aa70-9ba82c99f294.png)
 
-![Graphical user interface, application Description automatically generated](media/6d5ba0ce822930ed1278c656a26e9e73.png)
+![image](https://user-images.githubusercontent.com/51473494/214436483-2e5f6ed7-cb39-475c-98fc-8c94df13c2df.png)
 
 The key activities of this workflow include:
 
@@ -170,7 +176,7 @@ It performs this regardless of whether a photo has already been copied, as there
 
 The initial part of the workflow is the same as the trigger and first two actions in the “Copy users to host tenant” workflow and has been excluded from the below screenshot.
 
-![Graphical user interface, text, application Description automatically generated](media/16cd0f710ab3d500ce7ba9113fa44a71.png)
+![image](https://user-images.githubusercontent.com/51473494/214436506-27089444-5220-4c5d-b6ec-991b8160344c.png)
 
 ### Delete missing users from host tenant
 
@@ -178,9 +184,9 @@ A common problem for many organisations is having stale guests in their Azure AD
 
 The initial part of the workflow is the same as the trigger and first two actions in the “Copy users to host tenant” workflow and has been excluded from the below screenshots.
 
-![Graphical user interface, application Description automatically generated](media/5cc61163d0e1d4668e21c748db91482c.png)
+![image](https://user-images.githubusercontent.com/51473494/214436541-32349662-1279-4b44-9dfe-7974ec1646fe.png)
 
-![Graphical user interface, application Description automatically generated](media/81a39ba1371e0d963ddaa11b646db9e5.png)
+![image](https://user-images.githubusercontent.com/51473494/214436566-6d8bfede-7f66-4b2f-b866-df186e23718e.png)
 
 The key activities of this workflow include:
 
@@ -193,13 +199,13 @@ The key activities of this workflow include:
 
 To track whether guests have redeemed their “invitation” or are still pending, as well as to provide data that is used for the graphs on the front page of the SharePoint site, this workflow performs both of those functions. It is divided into two parallel streams, as seen below:
 
-![Graphical user interface, application, Teams Description automatically generated](media/a974a32adc05bd8cae8b3eeae7ce7a29.png)
+![image](https://user-images.githubusercontent.com/51473494/214436608-ba2af10d-82cc-4767-ad11-c3565390a344.png)
 
 #### Redemption Status & Statistics
 
 The part of the workflow that checks for redemption status is expanded below:
 
-![Graphical user interface, application Description automatically generated](media/3ab204ba1cdb8f341aad1ad644d929f4.png)
+![image](https://user-images.githubusercontent.com/51473494/214436639-0edc0345-2d9b-4c4a-b3b6-c21908fa70b0.png)
 
 The key activities of this part of the workflow include:
 
@@ -211,7 +217,7 @@ The key activities of this part of the workflow include:
 
 The part of the workflow that calculates the number of guests per subsidiary organisation is expanded below:
 
-![Graphical user interface, application Description automatically generated](media/e49ef3989898871dc10de44241f8a036.png)
+![image](https://user-images.githubusercontent.com/51473494/214436663-41f8019f-d296-4b8f-8739-2ae43f5d92d2.png)
 
 The key activities of this part of the workflow include:
 
@@ -225,9 +231,9 @@ As users may have their profile properties (i.e. name, job title, department, co
 
 The initial part of the workflow is the same as the trigger and first two actions in the “Copy users to host tenant” workflow and has been excluded from the below screenshots.
 
-![Graphical user interface, application, Teams Description automatically generated](media/9a4a2d76d7f56718bcf504460bb965b4.png)
+![image](https://user-images.githubusercontent.com/51473494/214436716-22629212-3b08-447a-8e1d-1d6ae67b3ea3.png)
 
-![Graphical user interface, application Description automatically generated](media/8e0667480a997114541b987552b2bc6e.png)
+![image](https://user-images.githubusercontent.com/51473494/214436738-4ce27daf-264c-45b4-a66a-89383e9ce561.png)
 
 The key activities of this workflow include:
 
