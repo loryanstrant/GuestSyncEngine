@@ -25,18 +25,13 @@ The M365 Tenant Guest Sync Solution automates the process of:
 | Subsidiary        | Any external organisation which has its users synchronised to the EBOS tenant as guests                                                                                                                           |
 | UPN               | User Principal Name – the login account of users (e.g. user@domain.com)                                                                                                                                           |
 
-## Methodology
+## Components
 
 The guest sync engine utilises a combination of the following Microsoft components:
-
-| ![image](https://user-images.githubusercontent.com/51473494/214437454-5c52eab0-f57b-45e1-a86f-8ccb16b6c967.png)
- | ![image](https://user-images.githubusercontent.com/51473494/214437479-a084519f-1a8b-4ed5-9b9d-57964fed4087.png)
- | ![image](https://user-images.githubusercontent.com/51473494/214437505-4b73586d-7d5b-42c9-b9c4-da3152a34c61.png) | ![image](https://user-images.githubusercontent.com/51473494/214437526-5928b1e7-2328-4eff-a2c8-b4afea234406.png) |
-|-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|-------------------------------------------------|---------------------------------------------------------------------|
-| **Azure Active Directory**                                                              | **SharePoint**                                                                          | **Power Automate**                              | **Microsoft Graph**                                                 |
-| App Registration Users & Guests Security group membership                               | Storage of guest synchronisation status and profile information                         | Scheduling and performing of actions            | Access to users and groups Creation of guests Updating of profiles  |
+<img width="226" alt="image" src="https://user-images.githubusercontent.com/51473494/214437736-36725cd6-0751-46a5-8a6d-19338031e3e5.png">
 
 
 ## Key sections
-- Architecture reference for host tenant
+- Operational workflow reference
+- [Architecture reference for host tenant](Architecture reference for host tenant)
 - Onboarding a new subsidiary tenant
