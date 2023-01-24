@@ -5,7 +5,7 @@ The following information relates only to the host tenant, as that is where the 
 ## App registration
 ![image](https://user-images.githubusercontent.com/51473494/214435819-5bf44d9d-8585-48d1-a2cc-1f6c9061fe16.png)
 ![image](https://user-images.githubusercontent.com/51473494/214435836-d3afe4cc-ba8d-450d-992e-501a8bbb35a4.png)
-<img width="325" alt="image" src="https://user-images.githubusercontent.com/51473494/214435960-d5b5c953-1815-48ca-8ac1-4ba081b87e34.png">
+<img src="https://user-images.githubusercontent.com/51473494/214435960-d5b5c953-1815-48ca-8ac1-4ba081b87e34.png">
 ![image](https://user-images.githubusercontent.com/51473494/214435981-4c13a43b-0f2d-4c9f-947d-e28cf9be1bca.png)
 
 
