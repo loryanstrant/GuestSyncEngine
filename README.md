@@ -34,5 +34,5 @@ The guest sync engine utilises a combination of the following Microsoft componen
 
 ## Key sections
 - Operational workflow reference
-- [Architecture reference for host tenant]
+- [Architecture reference for host tenant](Architecure%20reference%20for%20host%20tenant.md)
 - Onboarding a new subsidiary tenant
