@@ -1,4 +1,4 @@
-# Architecture Reference
+# Architecture Reference for host tenant
 
 The following information relates only to the host tenant, as that is where the entire solution resides.
 
