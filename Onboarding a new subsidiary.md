@@ -57,7 +57,8 @@ Ensure you record only the secret value, as this is required later.
 
 Navigate to the *API permissions* menu and press the “Add permission” button.
 
-![Graphical user interface, text, application Description automatically generated](media/672a793ea801ab1c37946e17034c387d.png)
+![image](https://user-images.githubusercontent.com/51473494/214441766-139fa9a3-ea02-4b27-9344-48d32a2acecf.png)
+
 
 Select *Microsoft Graph*.
 
