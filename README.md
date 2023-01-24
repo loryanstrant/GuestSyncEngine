@@ -5,7 +5,7 @@ Normal behaviour of M365 would predicate that every external user (within the su
 
 The M365 Tenant Guest Sync Solution automates the process of:
 - Inviting users from external organisation M365 tenants
-- Reporting on whether external users have successfully accessed the EBOS tenant
+- Reporting on whether external users have successfully accessed the host tenant
 - Keeping guest profile properties current
 - Removing guests if they are no longer required
 
