@@ -99,11 +99,11 @@ To provide some basic statistics around guest redemption states as well as sourc
 ![image](https://user-images.githubusercontent.com/51473494/214436142-03f334ea-d756-43ff-8c41-a436c3e01d16.png)
 
 
-| The Guest Redemption Status pie chart draws its data from the Guest Sync Status Statistics list.                                      | The Guests per Organisation pie chart draws its data from the Guest Sync Organisation Statistics list.                                |
-|---------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| ![image](https://user-images.githubusercontent.com/51473494/214436183-cf3fea72-b84a-4188-aa47-227296ada961.png)
- | ![image](https://user-images.githubusercontent.com/51473494/214436212-1926353d-5221-4004-bcb0-a511732c07d7.png)
- |
+The Guest Redemption Status pie chart draws its data from the Guest Sync Status Statistics list.                                |
+![image](https://user-images.githubusercontent.com/51473494/214436183-cf3fea72-b84a-4188-aa47-227296ada961.png)
+
+The Guests per Organisation pie chart draws its data from the Guest Sync Organisation Statistics list.
+![image](https://user-images.githubusercontent.com/51473494/214436212-1926353d-5221-4004-bcb0-a511732c07d7.png)
 
 ## Workflows
 
