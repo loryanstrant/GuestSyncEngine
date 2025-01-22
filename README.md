@@ -9,6 +9,9 @@ The M365 Tenant Guest Sync Solution automates the process of:
 - Keeping guest profile properties current
 - Removing guests if they are no longer required
 
+[Original blog post can be found here](https://www.loryanstrant.com/2023/01/25/synchronising-azure-ad-users-as-guests-between-microsoft-365-tenants-with-power-automate-and-microsoft-graph/)
+
+
 ## Terminology used
 
 | Term              | Meaning                                                                                                                                                                                                           |
